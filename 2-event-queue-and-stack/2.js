@@ -30,8 +30,13 @@ function awaitFor(someTime) {
   while (Date.now() < future) {}
 }
 
+setInterval(() => {
+  console.log("Exec 01"), 400;
+});
+
 setTimeout(() => {
-  console.log("Exec 01"), 3000;
+  awaitFor(3000);
+  console.log("Exec 02"), 300;
 });
 
 awaitFor(3000);
