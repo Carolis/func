@@ -22,3 +22,4 @@ const people = [
 const filterPoints = (person) => person.points >= 7;
 const approved = people.filter(filterPoints);
 console.log("🚀", approved)
+  
