@@ -19,5 +19,5 @@ const people = [
   { firstName: "person7", points: 2 },
 ];
 
-const filterPoints = (person) => person.nota >= 7;
+const filterPoints = (person) => person.points >= 7;
 const approved = people.filter(filterPoints);
