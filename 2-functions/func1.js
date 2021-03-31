@@ -22,4 +22,10 @@ console.log('🚀result', result)
 result = sum(1)
 console.log('🚀result', result) //will return NaN (1 + undefined)
 
+// workaround for NaN - Initializing before
+function sum(a = 0, b = 0) {
+  return a + b
+}
+
+
 ////////////////////////////////////////////////////////////////
